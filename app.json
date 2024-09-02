@@ -1,10 +1,9 @@
 {
   "expo": {
-    "name": "247Inventory",
+    "name": "247inventory",
     "slug": "247Inventory",
     "version": "1.0.0",
-
-    "scheme": "247Inventory",
+    "scheme": "inventory",
     "web": {
       "bundler": "metro",
       "output": "static",
@@ -21,28 +20,34 @@
     ],
     "experiments": {
       "typedRoutes": true,
-
       "tsconfigPaths": true
     },
-
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-
     "userInterfaceStyle": "light",
-
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yrgfrgergrve.ferw"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.yrgfrgergrve.ferw"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e3dec37a-7f04-4db9-9df0-c87bc2388d1c"
       }
     }
   }
